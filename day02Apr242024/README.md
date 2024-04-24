@@ -14,6 +14,6 @@ There are following operators in Java.
 #### Bitwise Operators
 
  - Convertingdecimal to binary (Manual way)
-    - 8 is converted to `10000`
+    - 8 is converted to `1000`
     - 15 is converetd to `1111`
  - Converting from binary to decimal (Manual way)
