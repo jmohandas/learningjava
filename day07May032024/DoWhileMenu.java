@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-class CalculationMenu {
+class DoWhileMenu {
     public static void main(String args[]) {
         int opNumber1, opNumber2, menuOption;
         char continueChoice;
         Scanner sc = new Scanner(System.in);
 
-        while (true) {
+       do {
             System.out.println("Menu");
             System.out.println("==================================");
             System.out.println("1. Add");
@@ -44,17 +44,7 @@ class CalculationMenu {
 
             System.out.println("Do you want to continue? (Y/N):");
             continueChoice = sc.next().charAt(0);
-
-            if (continueChoice == 'y' || continueChoice == 'Y') {
-                continue;
-            } else if (continueChoice == 'n' || continueChoice == 'N') {
-                break;
-            } else {
-                System.out.println("Do you want to continue? (Y/N):");
-                continueChoice = sc.next().charAt(0);
-            }
-
-        }
+        } while (continueChoice == 'y' || continueChoice == 'Y');
 
     }
 }
